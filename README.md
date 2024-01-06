@@ -14,7 +14,7 @@ Download the dataset: [flower_dataset](https://www.kaggle.com/datasets/alxmamaev
     ├── my_dataset.py: Customize reading data sets and define transforms data enhancement methods
     ├── split_data.py: Define the function to read the image dataset and divide the training-set and test-set
     ├── threeaugment.py: Additional data augmentation methods
-├── models: UniRepLKNet Model
+├── models: VisRetNet Model
     ├── VisRetNet.py: Construct "VisRetNet" models
     ├── VisRetNet_token_label_release.py: Construct "VisRetNet_token_label_release" models
 ├── util:
