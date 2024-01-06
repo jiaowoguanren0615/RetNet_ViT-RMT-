@@ -1,4 +1,6 @@
-# [RMT: Retentive Networks Meet Vision Transformers](https://arxiv.org/pdf/2309.11523.pdf)
+<h1 align="center">Retentive Networks Meet Vision Transformers</h1>
+
+## [RMT: Retentive Networks Meet Vision Transformers](https://arxiv.org/pdf/2309.11523.pdf)
 
 This is a warehouse for "Retentive Networks Meet Vision Transformers" based on pytorch framework, can be used to train your image datasets.
 The code mainly comes from [official code](https://github.com/qhfan/RMT)
