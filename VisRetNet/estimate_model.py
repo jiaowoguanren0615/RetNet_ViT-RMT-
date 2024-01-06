@@ -99,18 +99,18 @@ def Plot_ROC(net, val_loader, save_name, device):
     # plt.show()
 
 
-
 @torch.no_grad()
 def predict_single_image(model, device):
-
     data_transform = {
-    'train': transforms.Compose([transforms.RandomResizedCrop(224), transforms.ToTensor(),
-                                 transforms.RandomHorizontalFlip(), transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])]),
+        'train': transforms.Compose([transforms.RandomResizedCrop(224), transforms.ToTensor(),
+                                     transforms.RandomHorizontalFlip(),
+                                     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])]),
 
-    'valid': transforms.Compose([transforms.Resize((224, 224)), transforms.CenterCrop(224),
-                                 transforms.ToTensor(), transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
-                    }
-        
+        'valid': transforms.Compose([transforms.Resize((224, 224)), transforms.CenterCrop(224),
+                                     transforms.ToTensor(),
+                                     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
+    }
+
     img_transform = data_transform['valid']
 
     # load image
@@ -150,7 +150,6 @@ def predict_single_image(model, device):
                                                   predict[i].numpy()))
     plt.savefig(f'./pred_{img_path}')
     # plt.show()
-
 
 
 @torch.no_grad()
